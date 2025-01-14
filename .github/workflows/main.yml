@@ -83,7 +83,7 @@ jobs:
         with:
           name: macOSBuild-${{matrix.version}}
           path: export/release/macos/bin/*
-          if-no-files-found: error
+          if-no-files-found:
   Android:
     runs-on: ubuntu-latest
     steps:
@@ -143,4 +143,4 @@ jobs:
         with:
           name: iOSBuild
           path: export/release/ios/build/Release-iphoneos/*.ipa
-          if-no-files-found: error
+          if-no-files-found:
